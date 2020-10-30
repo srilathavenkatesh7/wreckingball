@@ -11,13 +11,13 @@ class Rope {
     this.rope = Constraint.create(options);
     World.add(world, this.rope);
   }
-  attach(body) {
+  /*attach(body) {
     this.rope.bodyA = body;
   }
 
-  fly() {
-    this.rope.bodyA = null;
-  }
+  //fly() {
+    //this.rope.bodyA = null;
+  //}*/
 
   display() {
     if (this.rope.bodyA) {
@@ -26,11 +26,11 @@ class Rope {
       push();
 
       stroke(48, 22, 8);
-      strokeWeight(3);
+      strokeWeight(10);
 
       line(pointB.x, pointB.y, pointA.x, pointA.y);
 
-      pop();
+     pop();
     }
   }
 }
